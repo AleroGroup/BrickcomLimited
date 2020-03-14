@@ -8,10 +8,16 @@
      <v-flex xs12 hidden-sm-and-down id="web">
        <v-layout row justify-center align-center>
          <v-flex xs4 class="ma-3 mr-8">
-           <span class="body-2">Vitae urna diam urna</span>
-           <h1 class="display-2 font-weight-bold blue--text">Lorem ipsum dolor.</h1>
-           <h3 class=" headline secondary--text mb-4 mt-4">consectetur adipiscing elit. </h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa aliquam morbi libero nullam. Aliquet lacus, nulla interdum vehicula id. Lectus sit elementum at risus sit nisi odio iaculis scelerisque.</p>
+           <span class="caption mb-4 grey--text">Electronic security systems solutions </span>
+           <h1 class="display-2 mt-3 font-weight-bold blue--text">Our Story</h1>
+           <h3 class=" headline secondary--text mb-4 mt-4">We are highly qualified in electronic security systems, </h3>
+           <p>
+              Brickcom Logistics Limited (BLL) is a security company bringing together the skills, knowledge and experiences in the electronic security industry.
+              We are Systems Integrators, consultants, trainers, evaluators and researchers; assisting organizations to
+              employ effective security solutions so as to minimize crime against people, assets and intellectual property;
+              and therefore reduce the financial impact on business.
+
+           </p>
          </v-flex>
          <div class="ma-3">
            <img src="../assets/image_picture.svg" alt="">
@@ -29,8 +35,13 @@
            <span class="body-2">Vitae urna diam urna</span>
               <h1 class="display-2 font-weight-bold blue--text">Lorem ipsum dolor.</h1>
               <h3 class=" headline secondary--text mb-4 mt-4">consectetur adipiscing elit. </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa aliquam morbi libero nullam. Aliquet lacus, nulla interdum vehicula id. Lectus sit elementum at risus sit nisi odio iaculis scelerisque.</p>
-          </div>
+               <p>
+              Brickcom Logistics Limited (BLL) is a security company bringing together the skills, knowledge and experiences in the electronic security industry.
+              We are Systems Integrators, consultants, trainers, evaluators and researchers; assisting organizations to
+              employ effective security solutions so as to minimize crime against people, assets and intellectual property;
+              and therefore reduce the financial impact on business.
+           </p>
+            </div>
        </v-layout>
      </v-flex>
    </v-container>
