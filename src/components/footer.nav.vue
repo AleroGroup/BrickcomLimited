@@ -1,87 +1,125 @@
 <template>
-<div>
+<div id="footer">
+    <v-card color="transparent">
     <!-- Website version -->
-         <v-flex id="home" xs12 hidden-sm-and-down>
-             <v-img :src="require('../assets/nav-header.png')">
-             <v-app-bar
-             color="transparent"
-             dark
-            flat
-            >
-            <img class="mt-6 pt-10" src="../assets/logo.svg">
-            <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-               <v-layout row justify-end>
-                 <p class="ma-1">
-                    <v-btn color="text " text href="#home">Home</v-btn>
-                 </p>
-                 <p class="ma-1">
-                    <v-btn color="text" text href="#service">Service</v-btn>
-                 </p>
-                 <p class="ma-1">
-                    <v-btn color="text" text href="#gallery">Gallery</v-btn>
-                 </p>
-                 <p class="ma-1">
-                    <v-btn color="text" text href="#get-directions">Get Directions</v-btn>
-                 </p>
-                 <p class="ma-1">
-                    <v-btn color="text" outlined href="#contacts">Contact</v-btn>
-                 </p>
-                 <p class="ma-1">
-                    <v-btn color="secondary" text href="#" class="caption font-weight-bold text-capitalize text-title">Open now
-                        <v-icon color="text">mdi-menu-down</v-icon>
-                    </v-btn>
-                </p>
-             </v-layout>
-            </v-app-bar>
-             <v-layout class="box">
-                 <v-flex md7>
-                     <div class="display-3 font-weight-medium text-title">Safe, Secure, Service </div>
-                 </v-flex>
-            </v-layout>
-             </v-img>
-             <!-- Main title -->
-        </v-flex>
+         <v-flex xs12 hidden-sm-and-down>
+             <v-layout column justify-center>
+                 <v-layout row justify-space-around mt-9>
+                     <p class="body-1 text-uppercase font-weight-medium white--text">Follow us</p>
+                     <div id="social-icons" class="mr-12">
+                         <span class="ma-3">
+                            <v-btn small icon>
+                                <v-img :src="require('../assets/images/icons/facebook.svg')"></v-img>
+                            </v-btn>
+                         </span>
+                         <span class="ma-3">
+                            <v-btn small icon>
+                                <v-img :src="require('../assets/images/icons/twitter.svg')"></v-img>
+                            </v-btn>
+                         </span>
+                     </div>
+                 </v-layout>
 
-        <!-- Mobile Version -->
-        <v-flex id="home"  xs12 hidden-md-and-up>
-             <v-img :src="require('../assets/nav-header-mobile.png')">
-             <v-app-bar
-             color="transparent"
-             dark
-            flat
-            >
-            <img width="120" class="mt-6 pt-10" src="../assets/logo.svg">
-            <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
-               <v-layout row justify-end>
-                <v-menu offset-y>
-                <template v-slot:activator="{ on }">
-                    <v-btn
-                     icon
-                     v-on="on"
-                    >
-                        <v-img class="ma-8 ml-3" :src="require('../assets/images/icons/menu icon.svg')"></v-img>
-                    </v-btn>
-                </template>
-                <v-list>
-                    <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
-                        :href="item.link"
-                    >
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
-                    </v-list-item>
-                </v-list>
-                </v-menu>
+                 <v-layout column justify-center pl-10 pr-10>
+                      <v-divider color="white"/>
+                        <v-layout row mt-5 mx-12>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-6"></div>
+                            <v-layout column ml-12 mb-5>
+                                <a href="#home" class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Home</a>
+                                <a href="#service" class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Our Services</a>
+                                <a href="#gallery" class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Gallery</a>
+                                <a href="#contacts" class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Contact us</a>
+                            </v-layout>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <div class="ml-12"></div>
+                            <v-layout column mb-6>
+                             <p  class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Find us here</p>
+                             <small class="white--text">
+                                 Windsor House, 5th Floor <br />
+                                 House No. 5<br />
+                                 Mwihoko, Kiambu<br />
+                                <br />
+                                <a href="tel:+254722337829">
+                                    +254 (0) 722 337829<br />
+                                </a>
+                                <a href="tel:+254733 940198">
+                                    +254 (0) 733 940198<br />
+                                </a>
+                                 brickcomlogistics@outlook.com<br />
+                            </small>
+                            </v-layout>
+                        </v-layout>
+                        <v-divider color="white"/>
+                 </v-layout>
+                 <v-layout column justify-center align-center mt-5 mb-5>
+                    <p href="" class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">PRiVACY POLICY</p>
+                    <small class="font-weight-medium white--text">© 2019  Brickcom  Logistics Limited</small>
+                </v-layout>
              </v-layout>
-            </v-app-bar>
-             <v-layout>
-                 <v-flex xs12 md6>
-                     <div class="box2 display-3 text-title">Safe, Secure, Service </div>
-                 </v-flex>
-            </v-layout>
-             </v-img>
-             <!-- Main title -->
         </v-flex>
+        <!-- Mobile Version -->
+        <v-flex xs12 hidden-md-and-up>
+                  <v-layout column justify-center align-center>
+                     <p class="mt-5 body-1 text-uppercase font-weight-medium white--text">Follow us</p>
+                     <div id="social-icons">
+                         <span class="ma-3">
+                            <v-btn small icon>
+                                <v-img :src="require('../assets/images/icons/facebook.svg')"></v-img>
+                            </v-btn>
+                         </span>
+                         <span class="ma-3">
+                            <v-btn small icon>
+                                <v-img :src="require('../assets/images/icons/twitter.svg')"></v-img>
+                            </v-btn>
+                         </span>
+                     </div>
+
+                 <v-layout column justify-center mt-4>
+                      <v-divider width="400" color="white"/>
+                        <v-layout column align-center mt-5 mx-auto>
+                            <v-layout column align-center mb-5>
+                                <a href="#home" class=" pa-2 body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Home</a>
+                                <a href="#service" class="pa-2 body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Our Services</a>
+                                <a href="#gallery" class="pa-2 body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Gallery</a>
+                                <a href="#contacts" class="pa-2 body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Contact us</a>
+                            </v-layout>
+                            <v-layout column align-center mb-6>
+                             <p class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">Find us here</p>
+                             <small class="white--text text-center">
+                                 Windsor House, 5th Floor <br />
+                                 House No. 5<br />
+                                 Mwihoko, Kiambu<br />
+                                <br />
+                                <a href="tel:+254722337829">
+                                    +254 (0) 722 337829<br />
+                                </a>
+                                <a href="tel:+254733 940198">
+                                    +254 (0) 733 940198<br />
+                                </a>
+                                 brickcomlogistics@outlook.com<br />
+                            </small>
+                            </v-layout>
+                        </v-layout>
+                        <v-divider width="400" color="white"/>
+                 </v-layout>
+                 <v-layout column justify-center align-center mt-5 mb-5>
+                    <p href="" class="body-2 text-uppercase font-weight-bold white--text" style="text-decoration:none;">PRiVACY POLICY</p>
+                    <small class="font-weight-medium white--text">© 2019  Brickcom  Logistics Limited</small>
+                </v-layout>
+             </v-layout>
+        </v-flex>
+    </v-card>
   </div>
 </template>
 
@@ -92,5 +130,7 @@ export default {
 </script>
 
 <style>
-
+#footer {
+    background-color: #1F1C3A;
+}
 </style>

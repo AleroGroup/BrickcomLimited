@@ -27,14 +27,7 @@ export default {
   /* .v-label, .theme--light {
     color: rgba(255, 255, 255, 0.685) !important;
   } */
-  #app .display-2,
-  .v-application .display-3,
-  .v-application .display-1,
-  .title-font {
-    font-family: 'Titillium Web', sans-serif !important;
-    /* color: azure !important; */
-  }
-  .application {
-    font-family: 'Noto Sans', sans-serif !important;
-  }
+ .VueCarousel-pagination .VueCarousel-dot.VueCarousel-dot--active {
+   background-color: #CC3300 !important;
+ }
 </style>

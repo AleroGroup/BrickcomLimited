@@ -35,7 +35,7 @@
             </v-app-bar>
              <v-layout class="box">
                  <v-flex md7>
-                     <div class="display-3 font-weight-medium text-title">Safe, Secure, Service </div>
+                     <div class="display-3 font-weight-bold text-title">Safe, Secure, Service </div>
                  </v-flex>
             </v-layout>
              </v-img>

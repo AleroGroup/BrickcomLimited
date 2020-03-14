@@ -2,8 +2,7 @@
   <div class="home">
     <header-main />
 <!--  -->
- <section>
-   <v-container class="my-12">
+   <v-content class="my-9">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
        <v-layout row justify-center align-center>
@@ -44,12 +43,10 @@
             </div>
        </v-layout>
      </v-flex>
-   </v-container>
- </section>
+   </v-content>
 
 <!--  -->
- <section id="service" style="background-color:#FFFBED">
- <v-container class="my-10">
+ <v-content id="service" style="background-color:#FFFBED" class="my-10">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
        <v-layout column justify-center align-center pa-5>
@@ -85,12 +82,10 @@
           </v-layout>
        </v-layout>
      </v-flex>
-   </v-container>
- </section>
+   </v-content>
 
 <!--  -->
- <section id="gallery">
- <v-container class="my-12">
+ <v-content id="gallery" class="my-12">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
         <v-layout column justify-center align-center pa-5>
@@ -103,13 +98,13 @@
               :perPage=7
               :perPageCustom="[[768, 3], [1024, 5]]"
               :scrollPerPage='true'
-              :avigationEnabled='false'
-              :paginationEnabled='false'
-              :navigationNextLabel='true'
+              :navigationEnabled='false'
+              :paginationEnabled='true'
+              :navigationPreviousLabel='true'
               :autoplay='true'
               :autoplayTimeout='1700'
               :speed='20'
-              style="width:100vw"
+              style="width:90vw"
               >
                 <slide v-for="item in images" :key="item.id">
                   <img width="250" height="250" class="" :src="item.icon">
@@ -127,9 +122,8 @@
               <carousel
               :perPage=1
               :scrollPerPage='true'
-              :avigationEnabled='false'
-              :paginationEnabled='false'
-              :navigationNextLabel='true'
+              :navigationEnabled='false'
+              :paginationEnabled='true'
               :autoplay='true'
               :autoplayTimeout='2700'
               :speed='20'
@@ -143,17 +137,16 @@
           </v-layout>
        </v-layout>
      </v-flex>
-   </v-container>
- </section>
+   </v-content>
 
 <!--  -->
-<section id="contacts" style="background-color:#CC3300">
- <v-container class="my-10">
+ <v-content class="my-10" id="contacts" style="background-color:#CC3300">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web" class="ml-8">
        <v-layout row wrap justify-space-around justify-center align-center pa-7>
-        <v-flex xs8 md5>
-            <p class="display-3 font-weight-bold white--text">Lorem ipsum dolor sit amet, consectetur</p>
+        <v-flex xs8 md5 class="mr-4">
+            <p class="display-3 font-weight-bold white--text">" We ensure high standards and
+            excellence in security are maintained all the time "</p>
         </v-flex>
 
         <v-flex xs6 class="ml-12 pa-6">
@@ -272,8 +265,7 @@
             </form>
           </v-layout>
      </v-flex>
-   </v-container>
- </section>
+   </v-content>
 
   <!--  -->
 <section id="get-directions">
@@ -305,6 +297,7 @@
      </v-layout>
    </v-container>
   </section>
+  <footer-main />
   </div>
 </template>
 
@@ -312,11 +305,13 @@
 import { Carousel, Slide } from 'vue-carousel'
 // @ is an alias to /src
 import Header from '@/components/header.nav'
+import Footer from '@/components/footer.nav'
 
 export default {
   name: 'Home',
   components: {
     'header-main': Header,
+    'footer-main': Footer,
     Carousel,
     Slide
   },
