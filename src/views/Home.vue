@@ -2,7 +2,7 @@
   <div class="home">
     <header-main />
 <!--  -->
- <section id="home">
+ <section>
    <v-container class="my-12">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
@@ -136,7 +136,7 @@
  </section>
 
 <!--  -->
-<section id="services" style="background-color:#CC3300">
+<section id="contacts" style="background-color:#CC3300">
  <v-container class="my-10">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web" class="ml-8">
@@ -283,7 +283,7 @@
        <v-card flat href="https://www.google.com/maps/search/MWIHOKO,+KIAMBU/data=!3m1!4b1">
        <v-col class="justify-center">
          <v-row class="ma-4">
-            <v-icon color="primary" size="100">mdi-map-marker</v-icon>
+            <v-icon class='ml-1' color="primary" size="100">mdi-map-marker</v-icon>
          </v-row>
          <v-row>
             <v-btn x-large text dark color="blue" class="text-capitalize font-weight-bold">Get Directions</v-btn>

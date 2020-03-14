@@ -4,8 +4,8 @@
 $body-font-family: 'Noto Sans';
 $title-font: 'Titillium Web';
 
-$typoOptions: display-4, headline, title, subtitle-1, subtitle-2, body-1, body-2, caption, overline;
-$titletypoOptions: display-3, display-2, display-1;
+$typoOptions: display-4, headline, display-1, title, subtitle-1, subtitle-2, body-1, body-2, caption, overline;
+$titletypoOptions: display-3, display-2;
 
 #app {
   font-family: $body-font-family, sans-serif !important;
