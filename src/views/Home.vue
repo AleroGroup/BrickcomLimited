@@ -325,20 +325,20 @@ export default {
         {
           id: 1,
           icon: require('../assets/camera_icon.svg'),
-          title: 'CCTV Camera',
-          description: 'Magna odio morbi pretium amet congue ut diam. dolor sit.'
+          title: 'CCTV & Control room',
+          description: 'We help you set up surveillance cameras for security monitoring, surveillance activities and law enforcement measures. '
         },
         {
           id: 2,
           icon: require('../assets/box_icon.svg'),
-          title: 'Access Control System',
-          description: 'Magna odio morbi pretium amet congue ut diam. dolor sit.'
+          title: 'Service & Maintenance',
+          description: 'Our support services help every business owner and manager to minimizing their exposure to losses related to crime.'
         },
         {
           id: 3,
           icon: require('../assets/light_icon.svg'),
-          title: 'Power Backup & Installation',
-          description: 'Magna odio morbi pretium amet congue ut diam. dolor sit.'
+          title: 'Power Backup & Solar Installation',
+          description: ' We install power back up system even if there is no power when you are connected to it, you cannot even tell whether there is blackout or not.'
         }
       ],
       images: [
