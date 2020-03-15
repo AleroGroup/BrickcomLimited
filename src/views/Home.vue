@@ -2,9 +2,9 @@
   <div class="home">
       <header-main />
 <!--  -->
-   <v-container class="my-9 pa-0 ma-0">
+   <v-container class="my-9">
       <!-- Web  -->
-     <v-flex xs12 hidden-sm-and-down id="web" class="pa-0 ma-0">
+     <v-flex xs12 hidden-sm-and-down id="web">
        <v-layout row justify-center align-center>
          <v-flex xs4 class="ma-3 mr-8">
            <span class="caption mb-4 grey--text">Electronic security systems solutions </span>
@@ -25,7 +25,7 @@
      </v-flex>
 
      <!-- Mobile  -->
-     <v-flex xs12 md6 hidden-md-and-up id="mobile" class="pa-0 ma-0">
+     <v-flex xs12 md6 hidden-md-and-up id="mobile">
           <v-layout column justify-center align-center>
             <div class="ma-3">
               <img width="300" src="../assets/image_picture.svg" alt="">
@@ -46,7 +46,7 @@
    </v-container>
 
 <!--  -->
- <v-container id="service" style="background-color:#FFFBED" class="my-10 pa-0 ma-0">
+ <v-card flat id="service" style="background-color:#FFFBED" class="my-10">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
        <v-layout column justify-center align-center pa-5>
@@ -66,7 +66,7 @@
      </v-flex>
 
      <!-- Mobile  -->
-     <v-flex xs12 md6 hidden-md-and-up id="mobile" class="pa-0 ma-0">
+     <v-flex xs12 md6 hidden-md-and-up id="mobile">
          <v-layout column justify-center align-center pa-5>
         <p class="display-1 _services">Our Services</p>
           <v-layout row justify-center style="width:100vw" mb-3>
@@ -82,10 +82,10 @@
           </v-layout>
        </v-layout>
      </v-flex>
-   </v-container>
+   </v-card>
 
 <!--  -->
- <v-container id="gallery" class="my-12 pa-0 ma-0">
+ <v-container id="gallery" class="my-12">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
         <v-layout column justify-center align-center pa-5>
@@ -115,7 +115,7 @@
        </v-layout>
      </v-flex>
      <!-- Mobile  -->
-     <v-flex xs12 hidden-md-and-up id="mobile" class="ma-0 pa-2">
+     <v-flex xs12 hidden-md-and-up id="mobile" class="pa-2">
           <v-layout column align-center>
             <p class="display-1 _services ">Gallery</p>
               <v-layout justify-center align-center ml-12>
@@ -141,7 +141,7 @@
    </v-container>
 
 <!--  -->
- <v-container class="my-10 pa-0 ma-0" id="contacts" style="background-color:#CC3300">
+ <v-card flat class="my-10" id="contacts" style="background-color:#CC3300">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web" class="ml-8">
        <v-layout row wrap justify-space-around justify-center align-center pa-7>
@@ -266,11 +266,11 @@
             </form>
           </v-layout>
      </v-flex>
-   </v-container>
+   </v-card>
 
   <!--  -->
 <section id="get-directions">
- <v-container class="my-12 pa-0 ma-0">
+ <v-container class="my-12">
       <!-- Web  -->
     <v-layout row justify-center align-center mr-12>
      <v-flex xs12 md9 hidden-sm-and-down id="web" class="mr-12">
