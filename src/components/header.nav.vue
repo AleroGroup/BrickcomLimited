@@ -1,5 +1,5 @@
 <template>
-<div>
+    <div id="header">
     <!-- Website version -->
          <v-flex id="home" xs12 hidden-sm-and-down>
              <v-img :src="require('../assets/nav-header.png')">

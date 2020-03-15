@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <header-main />
+      <header-main />
 <!--  -->
-   <v-content class="my-9">
+   <v-container class="my-9 pa-0 ma-0">
       <!-- Web  -->
-     <v-flex xs12 hidden-sm-and-down id="web">
+     <v-flex xs12 hidden-sm-and-down id="web" class="pa-0 ma-0">
        <v-layout row justify-center align-center>
          <v-flex xs4 class="ma-3 mr-8">
            <span class="caption mb-4 grey--text">Electronic security systems solutions </span>
@@ -25,7 +25,7 @@
      </v-flex>
 
      <!-- Mobile  -->
-     <v-flex xs12 md6 hidden-md-and-up id="mobile">
+     <v-flex xs12 md6 hidden-md-and-up id="mobile" class="pa-0 ma-0">
           <v-layout column justify-center align-center>
             <div class="ma-3">
               <img width="300" src="../assets/image_picture.svg" alt="">
@@ -43,10 +43,10 @@
             </div>
        </v-layout>
      </v-flex>
-   </v-content>
+   </v-container>
 
 <!--  -->
- <v-content id="service" style="background-color:#FFFBED" class="my-10">
+ <v-container id="service" style="background-color:#FFFBED" class="my-10 pa-0 ma-0">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
        <v-layout column justify-center align-center pa-5>
@@ -66,7 +66,7 @@
      </v-flex>
 
      <!-- Mobile  -->
-     <v-flex xs12 md6 hidden-md-and-up id="mobile">
+     <v-flex xs12 md6 hidden-md-and-up id="mobile" class="pa-0 ma-0">
          <v-layout column justify-center align-center pa-5>
         <p class="display-1 _services">Our Services</p>
           <v-layout row justify-center style="width:100vw" mb-3>
@@ -82,10 +82,10 @@
           </v-layout>
        </v-layout>
      </v-flex>
-   </v-content>
+   </v-container>
 
 <!--  -->
- <v-content id="gallery" class="my-12">
+ <v-container id="gallery" class="my-12 pa-0 ma-0">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web">
         <v-layout column justify-center align-center pa-5>
@@ -96,13 +96,13 @@
             </v-card> -->
               <carousel
               :perPage=7
-              :perPageCustom="[[768, 3], [1024, 5]]"
+              :perPageCustom="[[768, 4], [1024, 5]]"
               :scrollPerPage='true'
               :navigationEnabled='false'
               :paginationEnabled='true'
               :navigationPreviousLabel='true'
               :autoplay='true'
-              :autoplayTimeout='1700'
+              :autoplayTimeout='1000'
               :speed='20'
               style="width:90vw"
               >
@@ -115,7 +115,7 @@
        </v-layout>
      </v-flex>
      <!-- Mobile  -->
-     <v-flex xs12 hidden-md-and-up id="mobile">
+     <v-flex xs12 hidden-md-and-up id="mobile" class="ma-0 pa-2">
           <v-layout column align-center>
             <p class="display-1 _services ">Gallery</p>
               <v-layout justify-center align-center ml-12>
@@ -125,9 +125,10 @@
               :navigationEnabled='false'
               :paginationEnabled='true'
               :autoplay='true'
-              :autoplayTimeout='2700'
+              :autoplayTimeout='1200'
+              :easing='ease'
               :speed='20'
-              style="width:100vw"
+              style="width:90vw"
               >
                 <slide v-for="item in images" :key="item.id">
                   <img width="320" height="320" class="" :src="item.icon">
@@ -137,10 +138,10 @@
           </v-layout>
        </v-layout>
      </v-flex>
-   </v-content>
+   </v-container>
 
 <!--  -->
- <v-content class="my-10" id="contacts" style="background-color:#CC3300">
+ <v-container class="my-10 pa-0 ma-0" id="contacts" style="background-color:#CC3300">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web" class="ml-8">
        <v-layout row wrap justify-space-around justify-center align-center pa-7>
@@ -265,11 +266,11 @@
             </form>
           </v-layout>
      </v-flex>
-   </v-content>
+   </v-container>
 
   <!--  -->
 <section id="get-directions">
- <v-container class="my-12">
+ <v-container class="my-12 pa-0 ma-0">
       <!-- Web  -->
     <v-layout row justify-center align-center mr-12>
      <v-flex xs12 md9 hidden-sm-and-down id="web" class="mr-12">
