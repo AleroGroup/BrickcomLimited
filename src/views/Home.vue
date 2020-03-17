@@ -9,7 +9,7 @@
          <v-flex xs4 class="ma-3 mr-8">
            <span class="caption mb-4 grey--text">Electronic security systems solutions </span>
            <h1 class="display-2 mt-3 font-weight-bold blue--text">Our Story</h1>
-           <h3 class=" headline secondary--text mb-4 mt-4">We are highly qualified in electronic security systems, </h3>
+           <h3 class=" headline secondary--text mb-4 mt-4">We are highly qualified in electronic security systems,</h3>
            <p>
               Brickcom Logistics Limited (BLL) is a security company bringing together the skills, knowledge and experiences in the electronic security industry.
               We are Systems Integrators, consultants, trainers, evaluators and researchers; assisting organizations to
@@ -31,9 +31,9 @@
               <img width="300" src="../assets/image_picture.svg" alt="">
             </div>
             <div class="pa-4">
-           <span class="body-2">Vitae urna diam urna</span>
-              <h1 class="display-2 font-weight-bold blue--text">Lorem ipsum dolor.</h1>
-              <h3 class=" headline secondary--text mb-4 mt-4">consectetur adipiscing elit. </h3>
+           <span class="caption mb-4 grey--text">Electronic security systems solutions </span>
+              <h1 class="display-2 font-weight-bold blue--text">We are highly qualified in electronic security systems,</h1>
+              <h3 class=" headline secondary--text mb-4 mt-4">Our Story </h3>
                <p>
               Brickcom Logistics Limited (BLL) is a security company bringing together the skills, knowledge and experiences in the electronic security industry.
               We are Systems Integrators, consultants, trainers, evaluators and researchers; assisting organizations to
@@ -141,7 +141,7 @@
    </v-container>
 
 <!--  -->
- <v-card flat class="my-10" id="contacts" style="background-color:#CC3300">
+ <v-card flat class="my-10" id="contacts" style="background-color:#CC3300;">
       <!-- Web  -->
      <v-flex xs12 hidden-sm-and-down id="web" class="ml-8">
        <v-layout row wrap justify-space-around justify-center align-center pa-7>
@@ -403,4 +403,7 @@ export default {
         height: 600px;
         width: 100vw;
   }
+.v-card.v-sheet {
+  border-radius: 0!important;
+}
 </style>

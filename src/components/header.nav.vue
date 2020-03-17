@@ -50,7 +50,7 @@
              dark
             flat
             >
-            <img width="120" class="mt-6 pt-10" src="../assets/logo.svg">
+            <img width="150" class="mt-6 pt-10" src="../assets/logo.svg">
             <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
                <v-layout row justify-end>
                 <v-menu offset-y>
