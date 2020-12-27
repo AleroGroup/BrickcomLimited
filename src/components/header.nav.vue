@@ -8,7 +8,7 @@
              dark
             flat
             >
-            <img class="mt-6 pt-10" src="../assets/logo.svg">
+            <img src="../assets/logo.svg" style="margin-top:98px!important;margin-left:50px!important">
             <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
                <v-layout row justify-end>
                  <p class="ma-1">
@@ -50,7 +50,7 @@
              dark
             flat
             >
-            <img width="150" class="mt-6 pt-10" src="../assets/logo.svg">
+            <img width="100" src="../assets/logo.svg" style="margin-top:90px!important;">
             <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
                <v-layout row justify-end>
                 <v-menu offset-y>
